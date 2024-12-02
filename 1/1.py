@@ -6,7 +6,7 @@ l2 = []
 dist = 0
 similarity_score = 0
 
-with open('input', 'r') as f:
+with open('../input', 'r') as f:
     for line in f:
         line_content = line.split()
         l1.append(line_content[0])
