@@ -27,7 +27,6 @@ do_muls = re.findall(r'((do\(\)).*?(don\'t\(\))|(do\(\).*))', txt_in)
 
 muls = []
 for mul in do_muls:
-    print(f'\n{mul}')
     muls += re.findall(r'mul\(\d{1,3},\d{1,3}\)', mul[0])
 
 
