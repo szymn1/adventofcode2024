@@ -1,6 +1,3 @@
-from operator import xor
-
-
 def safe_unsafe(items):
     lvl_change = [int(j) - int(i) for i, j in zip(items[:-1], items[1:])]
     same_dir = all(i > 0 for i in lvl_change) or all(i < 0 for i in lvl_change)
